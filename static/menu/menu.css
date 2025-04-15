@@ -78,8 +78,9 @@ body::-webkit-scrollbar {
     border-radius: 5px;
     transition: opacity 0.3s ease-in-out;
 }
-.btn_menu:hover {
-    transform: scale(1.4);
+.btn_menu:hover{
+    transform: scale(1.05);
+    opacity: 0.7;
     filter: brightness(1.2);
 }
 .cj_menu::after {
