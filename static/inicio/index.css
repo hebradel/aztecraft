@@ -20,13 +20,25 @@ body::-webkit-scrollbar {
     display: block;
     float: left;
     margin-left: 25%;
-    margin-top: 20%;
+    margin-right: 25%;
+    margin-top: 12%;
+}
+.caja_central2{
+    width: 50%;
+    display: block;
+    float: left;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 3%;
+}
+.caja_central2 img{
+    width: 100%;
 }
 .botoon {
     display: block;
     float: left;
     width: 40%;
-    background-color: rgb(192, 90, 42);
+    background-color:#4f9234;
     padding: 2%;
     margin-top: 3%;
     margin-left: 3%;
