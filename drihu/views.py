@@ -16,6 +16,9 @@ def session(request):
             context={
                 'mensaje':'usuario incorrecto',
             }
+    context={
+        'mensaje':'',
+    }
     return render(request,'session.html',context)
 
 def admin(request):
