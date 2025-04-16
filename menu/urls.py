@@ -3,6 +3,6 @@ from django.urls import path
 from menu.views import *
 
 urlpatterns = [
-    path('inicio/', inicio),
-    path('wiki/', wiki),
+    path('inicio/', inicio, name='Minicio'),
+    path('wiki/', wiki,name='Mwiki'),
 ]

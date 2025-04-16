@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WIKI</title>
+    <link rel="stylesheet" href="{% static 'drihu/session.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Gidole&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'logo_banner/logo' %}.png" type="image/png">
+</head>
+<body>
+    <div class="centro">
+        <h2>INGRESE APARTADO DE WIKI</h2>
+        <form method="post">
+            {% csrf_token %}
+            <input name="user" type="text" placeholder="ingrese usuario">
+            <input name="password" type="password" placeholder="ingrese contraseña">
+            <input type="submit" value="guardar">
+        </form>
+        {% if mensaje %}
+        {{mensaje}}
+        {%endif%}
+    </div>
+</body>
+</html>

@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'menu',
     'inicio',
     'tienda',
+    'drihu',
 ]
 
 MIDDLEWARE = [
