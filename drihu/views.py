@@ -6,8 +6,10 @@ def session(request):
     if request.method == "POST":
         user=request.POST.get("user")
         password=request.POST.get("password")
+        print(user, password)
         adm= Admin.objects.filter(usuario=user).first()
         if adm:
+            print('hola')
             if check_password(password,adm.password):
                 response = redirect('admin')
                 response.set_cookie('usuario', adm.usuario, max_age=3600)
