@@ -15,13 +15,15 @@
     {% include 'includes/menu_menu.html' %}
     <div class="derecho">
         <img class="banner" src="{% static 'logo_banner/logo2.png' %}" >
-        <div class="forms">
-            <h2>INGRESE APARTADO DE WIKI</h2>
-            <form method="post">
-                {% csrf_token %}
-                <input name="wiki" type="text" placeholder="ingrese apartado">
-                <input type="submit" value="guardar">
-            </form>
+        <div class="contenedor">
+            {% for w in wiki %}
+            <a href="/menu/wiki/{{w.wiki}}/">
+            <div class="contenido">
+                <h2>{{w.wiki}}</h2>
+                <p>{{w.context}}</p>
+            </div>
+            </a>
+            {% endfor %}
         </div>
     </div>
 </body>

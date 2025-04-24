@@ -4,6 +4,8 @@ from django.db import models
 class Wiki(models.Model):
     id = models.AutoField(primary_key=True)
     wiki = models.CharField(max_length=30)
+    context = models.TextField(null=True, blank=True,max_length=100)
+
     def __str__(self):
         return self.wiki
 

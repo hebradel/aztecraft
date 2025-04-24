@@ -1,24 +1,37 @@
-.forms{
-    border-radius: 20px;
-    margin-top: 10%;
-    background-color: #97c286;
-    display: block;
-    float: left;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 1%;
-}
-.forms input{
-    display: block;    
-    width: 60%;
-    margin: 0 auto;
-}
 .banner{
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     height: 20%;
     margin-top: 3%;
+    display: block;
+}
+.contenedor{
+    display: block;
+    margin-top: 70px;
+    width: 100%;
+    background-color: #95c382;
+    border-radius: 20px;
+    float: left;
+}
+.contenido{
+    width: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 4.15%;
+    margin-right: 4.15%;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #d1f1c8;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.contenido p{
+    height: 70px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: black;
 }

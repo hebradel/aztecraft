@@ -1,0 +1,20 @@
+{% load static %}
+<div class="izquierdo">
+    <div class="cj_menu1" style="background-color: white;">
+    <a href="/"><img src="{% static 'logo_banner/logo' %}.png"></a>
+    </div>
+    <div class="cj_menu" data-text="ADMIN">
+        <a class="btn_menu" href="/admin/admin/"><img src="{% static 'iconos/hogar.png' %}"></a>
+    </div>
+    <div class="cj_menu2">
+        <a href="/admin/wiki/">WIKI</a>
+    </div>
+    {% for w in wiki %}
+    <div class="cj_menu2">
+        <a href="/admin/wiki/{{w.wiki}}/">{{w.wiki}}</a>
+    </div>
+    {% endfor %}
+    <div class="cj_menu" data-text="OFERTAS">
+        <a href="/admin/ofertas/">OFERTAS</a>
+    </div>
+</div>
