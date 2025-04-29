@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{w.wiki}}</title>
+    <link rel="stylesheet" href="{% static 'menu/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'menu/wiki.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Gidole&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'logo_banner/logo' %}.png" type="image/png">
+</head>
+<body>
+    {% include 'includes/menu_menu.html' %}
+    <div class="derecho">
+        <img class="banner" src="{% static 'logo_banner/logo2.png' %}" >
+        <div class="contenedor">
+            {% for w in wiki %}
+            <a href="/menu/wiki/{{w.wiki}}/">
+            <div class="contenido">
+                <h2>{{w.wiki}}</h2>
+                <p>{{w.context}}</p>
+            </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
