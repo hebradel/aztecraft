@@ -33,11 +33,7 @@ ALLOWED_HOSTS = ['*']
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://aztecraft.onrender.com',
-    'http://127.0.0.1:8000',
-    'http://localhost:8000',
-    'https://localhost:8000',
-    'https://127.0.0.1:8000',
+    'https://moderate-madeleine-hebradel-7fe6707f.koyeb.app/',
 ]
 
 # Application definition
